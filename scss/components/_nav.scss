@@ -1,0 +1,73 @@
+header{
+  height: 80px;
+  width: 100%;
+  background-color: $blue_400;
+  border-radius: 0 0 20px 20px;
+  position: fixed;
+
+  nav {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+    }
+
+    li{
+      padding-right: 32px;
+
+      a {
+        text-decoration: none;
+        color: $white;
+        font-size: 24px;
+        font-weight: 500;
+
+        position: relative;
+        //no line break
+        white-space: nowrap;
+
+        display: inline-block;
+        transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+
+        &::before{
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background: currentColor;
+          top: 100%;
+          left: 0;
+          pointer-events: none;
+          //show before
+          content: "";
+
+          //set the start position and the transition of the underline
+          transform-origin: 50% 100%;
+          transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+          clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%)
+
+        }
+
+        &:hover::before {
+          //up width and height of the underline
+          transform: translate3d(0, 2px, 0) scale3d(1.08, 3, 1);
+          //set the end of annimation
+          clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
+        }
+
+        //move text
+        &:hover{
+          transform: translate3d(0, -2px, 0);
+        }
+      }
+    }
+
+  }
+
+}
