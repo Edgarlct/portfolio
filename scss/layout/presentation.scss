@@ -1,3 +1,14 @@
+.home{
+  max-width: 1366px;
+  min-height: 90vh;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 600px 448px;
+  column-gap: 20px;
+  row-gap: 128px;
+}
+
 .homeLeftPart{
   width: 100%;
   grid-column: 1/7;
