@@ -7,11 +7,13 @@
 @import "abstract/_variables",
         "abstract/_mixins",
         "components/_nav",
-        "components/_button";
+        "components/_button",
+        "components/_footer";
 
 body{
   background-color: $blue_800;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
 section {
