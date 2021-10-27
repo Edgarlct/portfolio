@@ -1,0 +1,18 @@
+.skill{
+  max-width: 1366px;
+  min-height: 90vh;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 548px;
+  column-gap: 20px;
+  row-gap: 128px;
+}
+
+.bcIllustation{
+  grid-column: -1/-6;
+}
+.part1{
+  grid-column: 1/7;
+  grid-row: 1;
+}
