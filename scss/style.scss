@@ -8,7 +8,9 @@
         "abstract/_mixins",
         "components/_nav",
         "components/_button",
-        "components/_footer";
+        "components/_footer",
+        "components/shape",
+        "layout/presentation";
 
 body{
   background-color: $blue_800;
@@ -20,8 +22,7 @@ section {
   max-width: 1366px;
   min-height: 100vh;
   display: grid;
-  margin: 0 120px;
+  margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr 1fr;
   gap: 20px;
 }

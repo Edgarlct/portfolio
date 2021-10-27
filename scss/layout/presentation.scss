@@ -1,0 +1,41 @@
+.homeLeftPart{
+  width: 100%;
+  grid-column: 1/7;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p{
+    color: $blue_300;
+    margin-bottom: 16px;
+  }
+  .hello{
+    font-size: 40px;
+  }
+  h1{
+    font-size: 64px;
+    font-weight: 500;
+    color: $white;
+    margin-bottom: 16px;
+  }
+  .devWeb{
+    font-size: 48px;
+  }
+}
+
+.profil{
+  grid-column: -2/-6;
+  display: flex;
+  align-items: center;
+
+  .picturePorfil {
+    height: 448px;
+    width: 100%;
+    background-image: url("../assets/image/pro.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 30px 0 30px;
+    position: relative;
+  }
+}
