@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 
-@import "abstract/_variables.scss",
-"components/_nav.scss";
+@import "abstract/_variables",
+        "components/_nav",
+        "components/_button";
 
 body{
   background-color: $blue_800;
