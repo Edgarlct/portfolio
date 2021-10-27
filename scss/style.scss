@@ -10,9 +10,12 @@
         "components/_button",
         "components/_footer",
         "components/shape",
+        "components/textAndIllustration",
         "layout/presentation";
 
 body{
+  width: 100vw;
+  overflow-x: hidden;
   background-color: $blue_800;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -20,9 +23,11 @@ body{
 
 section {
   max-width: 1366px;
-  min-height: 100vh;
+  min-height: 90vh;
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
-  gap: 20px;
+  grid-template-rows: 600px 448px;
+  column-gap: 20px;
+  row-gap: 128px;
 }
