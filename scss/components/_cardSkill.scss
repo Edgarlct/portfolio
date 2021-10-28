@@ -1,0 +1,71 @@
+.cardHSkill{
+  height: 136px;
+  background-color: $blue_300;
+  border-radius: 0 30px 0 30px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+
+  .name{
+    margin-bottom: 16px;
+
+    p{
+      margin-top: 4px;
+    }
+  }
+}
+
+.cardSSkill{
+  height: 400px;
+  background-color: $blue_300;
+  border-radius: 0 30px 0 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 16px;
+
+  .name{
+    margin-bottom: 16px;
+  }
+
+  .description{
+    margin-top: 24px;
+  }
+
+}
+
+.iconSkill{
+  height: 110px;
+  width: 110px;
+  margin-right: 16px;
+  background-color: $blue_500;
+  border-radius: 0 15px 0 15px;
+  @include flex-center;
+}
+
+.iconSoft{
+  width: 100%;
+  height: 100%;
+
+  img{
+    width: 80%;
+  }
+}
+
+.gauge{
+  display: flex;
+  flex-direction: row;
+  margin-top: 4px;
+
+  .dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: $white;
+    margin-right: 4px;
+  }
+
+  .active{
+    background-color: $orange_400;
+  }
+}
