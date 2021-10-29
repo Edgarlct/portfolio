@@ -1,5 +1,5 @@
 .skill{
-  max-width: 1366px;
+  max-width: 1200px;
   min-height: 90vh;
   display: grid;
   margin: 0 auto;
@@ -11,9 +11,6 @@
 .mt32{
   margin-top: 32px;
 }
-.bcIllustation{
-  grid-column: -2/-6;
-}
 
 .gridRow1{
   grid-row: 1;
@@ -23,10 +20,6 @@
 }
 .gridColumnFull{
   grid-column: 1/-1;
-}
-
-.part1{
-  grid-column: 1/7;
 }
 
 .card1{

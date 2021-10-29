@@ -72,3 +72,15 @@ h3{
   font-size: 24px;
   font-weight: 500;
 }
+
+.illuShapeReverse{
+  grid-column: 8/-1;
+}
+
+.illuReverse{
+  grid-column: 7/-1;
+}
+
+.partReverse{
+  grid-column: 1/7;
+}
