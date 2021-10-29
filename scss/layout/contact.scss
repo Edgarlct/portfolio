@@ -1,0 +1,42 @@
+.contact{
+  max-width: 1200px;
+  min-height: 80vh;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  row-gap: 32px;
+}
+
+.partContact{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .title{
+    margin-bottom: 16px;
+  }
+
+  >div p{
+    margin-bottom: 24px;
+    margin-left: 48px;
+  }
+}
+
+.wayContact{
+  grid-column: 1/7;
+}
+
+.network{
+  grid-column: 7/-1;
+
+  button{
+    margin-bottom: 32px;
+  }
+}
+
+.titleContact{
+  font-size: 64px;
+  font-weight: 600;
+}
