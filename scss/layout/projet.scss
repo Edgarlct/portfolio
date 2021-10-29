@@ -1,0 +1,10 @@
+.projet{
+  max-width: 1200px;
+  min-height: 90vh;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 600px;
+  column-gap: 20px;
+  row-gap: 32px;
+}

@@ -23,7 +23,7 @@
   .bcContrast{
     background-color: $blue_700;
     width: 200vw;
-    height: 120%;
+    height: 108%;
     transform: translate(-50%, 0%);
     z-index: -1;
     position: absolute;
@@ -73,14 +73,26 @@ h3{
   font-weight: 500;
 }
 
-.illuShapeReverse{
-  grid-column: 8/-1;
-}
-
 .illuReverse{
-  grid-column: 7/-1;
+  grid-column: 8/-1;
 }
 
 .partReverse{
   grid-column: 1/7;
+}
+
+.more{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+
+  margin-top: 8px;
+  p{
+    color: $orange_400;
+    margin: 0px;
+  }
+
+  img{
+    margin-left: 8px;
+  }
 }
