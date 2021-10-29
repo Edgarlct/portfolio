@@ -1,0 +1,46 @@
+.projectSpider{
+  max-width: 1200px;
+  min-height: 90vh;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  row-gap: 128px;
+}
+
+.projectInfo{
+  margin-top: 80px;
+  h1{
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  >p{
+    margin-bottom: 16px;
+  }
+  a{
+    text-decoration: none;
+  }
+
+  .date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 32px;
+
+    .time{
+      width: 64px;
+      height: 64px;
+      border-radius: 2px 15px;
+      background-color: $blue_300;
+      @include flex-center;
+      margin-right: 16px;
+    }
+
+    p{
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+}
