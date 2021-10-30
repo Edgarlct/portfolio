@@ -5,7 +5,7 @@
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
-  row-gap: 128px;
+  row-gap: 80px;
 }
 
 .projectInfo{
@@ -87,4 +87,23 @@
 .blogSpider{
   grid-column: 2;
   grid-row: 3/-1;
+}
+
+.techUsed{
+  grid-column: 1/6;
+  width: 100%;
+  height: 360px;
+
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.mReset{
+  margin: 0;
+}
+
+.m8{
+  margin: 8px;
 }
