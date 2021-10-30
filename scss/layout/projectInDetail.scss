@@ -72,6 +72,11 @@
   }
 }
 
+.onePhoto{
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+
 .objPosLeft{
   object-position: left;
 }
@@ -113,4 +118,32 @@
 
 .m8{
   margin: 8px;
+}
+
+.chargeBar{
+  width: 300px;
+  height: 10px;
+  border: solid 2px $white;
+  border-radius: 5px;
+
+  .load{
+    height: 100%;
+    background-color: $orange_400;
+  }
+
+  .w80{
+  width: 80%;
+  }
+}
+
+.percent.percent.percent{
+  width: fit-content;
+  width: -moz-fit-content;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  position: relative;
+  transform: translate(-50%);
+  left: 80%;
+
 }
