@@ -72,6 +72,10 @@
   }
 }
 
+.objPosLeft{
+  object-position: left;
+}
+
 .bigPictureCol1{
   grid-column: 1;
   grid-row: 1/4;
@@ -88,7 +92,10 @@
   grid-column: 2;
   grid-row: 3/-1;
 }
-
+.fullPortraitPicture{
+  grid-column: 2;
+  grid-row: 1/-1;
+}
 .techUsed{
   grid-column: 1/6;
   width: 100%;
