@@ -84,8 +84,7 @@ h3{
 .more{
   display: flex;
   flex-direction: row;
-  align-content: center;
-
+  align-items: center;
   margin-top: 8px;
   p{
     color: $orange_400;
@@ -94,5 +93,12 @@ h3{
 
   img{
     margin-left: 8px;
+    transition: ease-in-out 0.3s;
+  }
+}
+
+.more:hover{
+  img{
+    transform: translate3d(5px, 0, 0);
   }
 }
