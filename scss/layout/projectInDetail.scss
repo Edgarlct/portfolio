@@ -134,6 +134,9 @@
   .w80{
   width: 80%;
   }
+  .w10{
+  width: 10%;
+  }
 }
 
 .percent.percent.percent{
@@ -144,6 +147,12 @@
   margin-bottom: 4px;
   position: relative;
   transform: translate(-50%);
-  left: 80%;
+}
 
+.l80{
+  left: 80%;
+}
+
+.l10{
+  left: 10%;
 }
