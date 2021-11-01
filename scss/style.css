@@ -976,4 +976,8 @@ body {
   color: #FFFFFF;
 }
 
+p {
+  text-align: justify;
+}
+
 /*# sourceMappingURL=style.css.map */
