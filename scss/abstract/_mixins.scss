@@ -60,7 +60,7 @@
 }
 
 @mixin xs{
-  @media screen and (max-width: 380px){
+  @media screen and (max-width: 420px){
     @content;
   }
 }

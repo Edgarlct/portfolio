@@ -276,7 +276,7 @@ footer .copyright {
     grid-column: 1/-1;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
   .bcIllustration {
     height: 320px;
   }
@@ -320,7 +320,7 @@ footer .copyright {
   display: flex;
   flex-direction: row;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
   .part1 .link {
     flex-direction: column;
     align-items: center;
@@ -329,7 +329,7 @@ footer .copyright {
 .part1 .link a {
   margin-right: 24px;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
   .part1 .link a {
     margin-right: 0px;
     margin-bottom: 16px;
@@ -406,7 +406,7 @@ h3 {
 .cardHSkill .name p {
   margin-top: 4px;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
   .cardHSkill {
     flex-direction: column;
     height: 260px;
@@ -447,7 +447,7 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
   .iconSkill {
     margin-right: 0;
   }
