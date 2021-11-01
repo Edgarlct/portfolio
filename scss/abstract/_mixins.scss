@@ -30,10 +30,11 @@
   @include m{
     max-width: 530px;
     grid-template-columns: repeat(4, 1fr);
+    row-gap: 32px;
   }
 
   @include s{
-    margin: 0 30px;
+    margin: 0 48px;
   }
 }
 
@@ -54,6 +55,12 @@
 }
 @mixin s{
   @media screen and (max-width: 530px){
+    @content;
+  }
+}
+
+@mixin xs{
+  @media screen and (max-width: 380px){
     @content;
   }
 }
