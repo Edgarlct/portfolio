@@ -1,6 +1,9 @@
 .projet{
   @include grid();
   grid-template-rows: 600px;
+  @include m{
+    grid-template-rows: 400px;
+  }
 }
 
 a{

@@ -689,6 +689,11 @@ h3 {
     margin: 0 48px;
   }
 }
+@media screen and (max-width: 868px) {
+  .projet {
+    grid-template-rows: 400px;
+  }
+}
 
 a {
   text-decoration: none;
