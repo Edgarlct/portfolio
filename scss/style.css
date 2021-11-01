@@ -941,7 +941,7 @@ a {
 
 body {
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden auto;
   background-color: #0f3566;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;

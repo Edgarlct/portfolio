@@ -20,7 +20,7 @@
 
 body{
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden auto;
   background-color: $blue_800;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
