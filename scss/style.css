@@ -354,10 +354,6 @@ h3 {
   position: relative;
 }
 
-.gridRow2 {
-  grid-row: 2;
-}
-
 .skill {
   max-width: 1200px;
   min-height: 80vh;
@@ -392,30 +388,6 @@ h3 {
 
 .mt32 {
   margin-top: 32px;
-}
-
-.gridRow1 {
-  grid-row: 1;
-}
-
-.gridRow3 {
-  grid-row: 3;
-}
-
-.gridRow4 {
-  grid-row: 4;
-}
-
-.gridRow5 {
-  grid-row: 5;
-}
-
-.gridRow6 {
-  grid-row: 6;
-}
-
-.gridRow7 {
-  grid-row: 7;
 }
 
 .gridColumnFull {
