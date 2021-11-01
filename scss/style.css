@@ -998,7 +998,8 @@ a {
 }
 
 .chargeBar {
-  width: 300px;
+  width: 50vw;
+  max-width: 300px;
   height: 10px;
   border: solid 2px #FFFFFF;
   border-radius: 5px;
