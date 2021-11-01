@@ -3,3 +3,24 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin xl{
+  @media screen and (max-width: 1200px){
+    @content;
+  }
+}
+@mixin l{
+  @media screen and (max-width: 1024px){
+    @content;
+  }
+}
+@mixin m{
+  @media screen and (max-width: 768px){
+    @content;
+  }
+}
+@mixin s{
+  @media screen and (max-width: 430px){
+    @content;
+  }
+}
