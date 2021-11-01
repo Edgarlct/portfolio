@@ -4,9 +4,14 @@
 
 .partContact{
   height: 80vh;
+  @include m{
+    height: 40vh;
+  }
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 64px;
 
   .title{
     margin-bottom: 16px;
@@ -20,10 +25,16 @@
 
 .wayContact{
   grid-column: 1/7;
+  @include m{
+    grid-column: 1/-1;
+  }
 }
 
 .network{
   grid-column: 7/-1;
+  @include m{
+    grid-column: 1/-1;
+  }
 
   button{
     margin-bottom: 32px;
