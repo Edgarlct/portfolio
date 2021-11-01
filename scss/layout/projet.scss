@@ -4,12 +4,12 @@
   @include m{
     grid-template-rows: 400px;
 
-    div:nth-of-type(5){
-      grid-row: 4;
+    div:nth-of-type(6){
+      grid-row: 7;
     }
 
-    div:nth-of-type(10){
-      grid-row: 9;
+    div:nth-of-type(11){
+      grid-row: 12;
     }
   }
 }
