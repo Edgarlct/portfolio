@@ -13,10 +13,14 @@ header{
   }
 
   label{
-    >span, >input, .bcBurger{
-      display: none;
-    }
     .burgerMenuContainer{
+      >span, >input, .bcBurger{
+        display: none;
+      }
+    }
+
+    .burgerMenuContainer{
+      height: 100%;
       @include m {
         > span, > input, .bcBurger {
           display: block;

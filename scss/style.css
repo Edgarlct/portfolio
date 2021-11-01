@@ -19,8 +19,11 @@ header {
     background-color: unset;
   }
 }
-header label > span, header label > input, header label .bcBurger {
+header label .burgerMenuContainer > span, header label .burgerMenuContainer > input, header label .burgerMenuContainer .bcBurger {
   display: none;
+}
+header label .burgerMenuContainer {
+  height: 100%;
 }
 @media screen and (max-width: 868px) {
   header label .burgerMenuContainer {
