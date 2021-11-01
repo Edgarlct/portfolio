@@ -4,6 +4,16 @@
   align-items: center;
 }
 
+@mixin grid($rowGapValue: 32px){
+  max-width: 1200px;
+  min-height: 80vh;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  row-gap: $rowGapValue;
+}
+
 @mixin xl{
   @media screen and (max-width: 1200px){
     @content;

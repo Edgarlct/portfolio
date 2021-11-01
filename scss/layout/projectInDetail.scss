@@ -1,11 +1,5 @@
 .projectGrid{
-  max-width: 1200px;
-  min-height: 90vh;
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 20px;
-  row-gap: 80px;
+  @include grid(80px);
 }
 
 .projectInfo{

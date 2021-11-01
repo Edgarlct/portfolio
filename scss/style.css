@@ -283,13 +283,13 @@ h3 {
 
 .home {
   max-width: 1200px;
-  min-height: 90vh;
+  min-height: 80vh;
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 600px 448px;
   column-gap: 20px;
   row-gap: 128px;
+  grid-template-rows: 600px 448px;
 }
 
 .homeLeftPart {
@@ -339,13 +339,13 @@ h3 {
 
 .skill {
   max-width: 1200px;
-  min-height: 90vh;
+  min-height: 80vh;
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 600px;
   column-gap: 20px;
   row-gap: 32px;
+  grid-template-rows: 600px;
 }
 
 .mt32 {
@@ -402,13 +402,13 @@ h3 {
 
 .projet {
   max-width: 1200px;
-  min-height: 90vh;
+  min-height: 80vh;
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 600px;
   column-gap: 20px;
   row-gap: 32px;
+  grid-template-rows: 600px;
 }
 
 a {
@@ -460,7 +460,7 @@ a {
 
 .projectGrid {
   max-width: 1200px;
-  min-height: 90vh;
+  min-height: 80vh;
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
