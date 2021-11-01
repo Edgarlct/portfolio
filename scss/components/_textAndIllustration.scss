@@ -4,6 +4,9 @@
     grid-column: 1/-1;
   }
   height: 448px;
+  @include xs{
+    height: 320px;
+  }
   background-color: $blue_400;
   border-radius: 0 30px 0 30px;
   @include flex-center;
@@ -89,10 +92,16 @@ h3{
 
 .illuReverse{
   grid-column: 8/-1;
+  @include m{
+    grid-column: 1/-1;
+  }
 }
 
 .partReverse{
   grid-column: 1/7;
+  @include m{
+    grid-column: 1/-1;
+  }
 }
 
 .more{

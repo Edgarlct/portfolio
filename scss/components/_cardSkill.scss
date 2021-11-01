@@ -6,6 +6,7 @@
   align-items: center;
   padding: 16px;
 
+
   .name{
     margin-bottom: 16px;
 
@@ -13,10 +14,21 @@
       margin-top: 4px;
     }
   }
+  @include xs{
+    flex-direction: column;
+    height: 260px;
+
+    .iconSkill{
+      margin-bottom: 16px;
+    }
+  }
 }
 
 .cardSSkill{
   height: 400px;
+  @include s{
+    height: 336px;
+  }
   background-color: $blue_300;
   border-radius: 0 30px 0 30px;
   display: flex;
@@ -38,6 +50,9 @@
   height: 110px;
   width: 110px;
   margin-right: 16px;
+  @include xs{
+    margin-right: 0;
+  }
   background-color: $blue_500;
   border-radius: 0 15px 0 15px;
   @include flex-center;

@@ -276,6 +276,11 @@ footer .copyright {
     grid-column: 1/-1;
   }
 }
+@media screen and (max-width: 380px) {
+  .bcIllustration {
+    height: 320px;
+  }
+}
 .bcIllustration img {
   width: 80%;
 }
@@ -353,9 +358,19 @@ h3 {
 .illuReverse {
   grid-column: 8/-1;
 }
+@media screen and (max-width: 868px) {
+  .illuReverse {
+    grid-column: 1/-1;
+  }
+}
 
 .partReverse {
   grid-column: 1/7;
+}
+@media screen and (max-width: 868px) {
+  .partReverse {
+    grid-column: 1/-1;
+  }
 }
 
 .more {
@@ -391,6 +406,15 @@ h3 {
 .cardHSkill .name p {
   margin-top: 4px;
 }
+@media screen and (max-width: 380px) {
+  .cardHSkill {
+    flex-direction: column;
+    height: 260px;
+  }
+  .cardHSkill .iconSkill {
+    margin-bottom: 16px;
+  }
+}
 
 .cardSSkill {
   height: 400px;
@@ -400,6 +424,11 @@ h3 {
   justify-content: center;
   flex-direction: column;
   padding: 16px;
+}
+@media screen and (max-width: 530px) {
+  .cardSSkill {
+    height: 336px;
+  }
 }
 .cardSSkill .name {
   margin-bottom: 16px;
@@ -417,6 +446,11 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 380px) {
+  .iconSkill {
+    margin-right: 0;
+  }
 }
 
 .iconSoft {
@@ -572,6 +606,11 @@ h3 {
     margin: 0 48px;
   }
 }
+@media screen and (max-width: 868px) {
+  .skill {
+    grid-template-rows: 400px;
+  }
+}
 
 .mt32 {
   margin-top: 32px;
@@ -581,24 +620,41 @@ h3 {
   grid-column: 1/-1;
 }
 
-.card1 {
-  grid-column: 1/5;
+.skillGrid {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 16px;
+  grid-column-gap: 20px;
+  margin: auto;
 }
-
-.card2 {
-  grid-column: 5/9;
+@media screen and (max-width: 1100px) {
+  .skillGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
-.card3 {
-  grid-column: 9/-1;
+@media screen and (max-width: 868px) {
+  .skillGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .cardMid1 {
   grid-column: 3/7;
 }
+@media screen and (max-width: 868px) {
+  .cardMid1 {
+    grid-column: 1/-1;
+  }
+}
 
 .cardMid2 {
   grid-column: 7/11;
+}
+@media screen and (max-width: 868px) {
+  .cardMid2 {
+    grid-column: 1/-1;
+  }
 }
 
 .projet {
