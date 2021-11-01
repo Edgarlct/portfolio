@@ -8,6 +8,136 @@ header{
   position: sticky;
   filter: drop-shadow( 0px 12px 24px $shadow);
 
+  @include m{
+    background-color: unset;
+  }
+
+  label{
+    >span, >input, .bcBurger{
+      display: none;
+    }
+
+    @include m{
+      >span, >input, .bcBurger{
+        display: block;
+      }
+
+      display: flex;
+      flex-direction: column;
+      width: 70px;
+      cursor: pointer;
+      position: relative;
+      z-index: 10;
+      left: 40px;
+      top: 20px;
+
+      nav{
+        visibility: hidden;
+        height: 50vh;
+        width: auto;
+
+        ul {
+          height: 80%;
+          justify-content: space-evenly;
+          li{
+            opacity: 0%;
+            transition: ease-in-out 0.5s;
+            position: relative;
+            &:nth-of-type(1){
+              left: -100px;
+            }
+            &:nth-of-type(2){
+              left: -200px;
+            }
+            &:nth-of-type(3){
+              left: -300px;
+            }
+          }
+
+        }
+
+        a{
+          transition: ease-in-out 0.5s;
+          opacity: 0%;
+          position: relative;
+          left: -400px;
+        }
+      }
+
+      >span{
+        height: 7px;
+        margin: 7px 0;
+        background-color: $white;
+        border-radius: 8px;
+        transition: 0.4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+        &:nth-of-type(1){
+          width: 50%;
+        }
+        &:nth-of-type(2){
+          width: 100%;
+        }
+        &:nth-of-type(3){
+          width: 75%;
+        }
+      }
+
+      .bcBurger{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: $darkShadow;
+        visibility: hidden;
+      }
+
+      input{
+        display: none;
+
+        &:checked{
+          ~span:nth-of-type(1){
+            transform-origin: bottom;
+            transform: rotateZ(45deg) translate(8px,0px);
+          }
+          ~span:nth-of-type(2){
+            transform-origin: top;
+            transform: rotateZ(-45deg);
+          }
+          ~span:nth-of-type(3){
+            transform-origin: bottom;
+            width: 50%;
+            transform: translate(30px, -11px) rotateZ(45deg);
+          }
+
+          ~nav, ~.bcBurger{
+            visibility: visible;
+          }
+
+          ~nav{
+            a{
+              opacity: 100%;
+              left: 0px;
+            }
+            li{
+              opacity: 100%;
+              &:nth-of-type(1){
+                left: 0px;
+              }
+              &:nth-of-type(2){
+                left: 0px;
+              }
+              &:nth-of-type(3){
+                left: 0px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
   nav {
     height: 100%;
     width: 80%;
@@ -17,10 +147,17 @@ header{
     align-items: center;
     justify-content: space-between;
 
+    @include m{
+      flex-direction: column;
+    }
+
     ul {
       list-style: none;
       display: flex;
       flex-direction: row;
+      @include m{
+        flex-direction: column;
+      }
     }
 
     li{

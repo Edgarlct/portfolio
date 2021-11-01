@@ -14,6 +14,118 @@ header {
   position: sticky;
   filter: drop-shadow(0px 12px 24px rgba(22, 76, 146, 0.23));
 }
+@media screen and (max-width: 868px) {
+  header {
+    background-color: unset;
+  }
+}
+header label > span, header label > input, header label .bcBurger {
+  display: none;
+}
+@media screen and (max-width: 868px) {
+  header label {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    left: 40px;
+    top: 20px;
+  }
+  header label > span, header label > input, header label .bcBurger {
+    display: block;
+  }
+  header label nav {
+    visibility: hidden;
+    height: 50vh;
+    width: auto;
+  }
+  header label nav ul {
+    height: 80%;
+    justify-content: space-evenly;
+  }
+  header label nav ul li {
+    opacity: 0%;
+    transition: ease-in-out 0.5s;
+    position: relative;
+  }
+  header label nav ul li:nth-of-type(1) {
+    left: -100px;
+  }
+  header label nav ul li:nth-of-type(2) {
+    left: -200px;
+  }
+  header label nav ul li:nth-of-type(3) {
+    left: -300px;
+  }
+  header label nav a {
+    transition: ease-in-out 0.5s;
+    opacity: 0%;
+    position: relative;
+    left: -400px;
+  }
+  header label > span {
+    height: 7px;
+    margin: 7px 0;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+  header label > span:nth-of-type(1) {
+    width: 50%;
+  }
+  header label > span:nth-of-type(2) {
+    width: 100%;
+  }
+  header label > span:nth-of-type(3) {
+    width: 75%;
+  }
+  header label .bcBurger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(22, 76, 146, 0.6);
+    visibility: hidden;
+  }
+  header label input {
+    display: none;
+  }
+  header label input:checked ~ span:nth-of-type(1) {
+    transform-origin: bottom;
+    transform: rotateZ(45deg) translate(8px, 0px);
+  }
+  header label input:checked ~ span:nth-of-type(2) {
+    transform-origin: top;
+    transform: rotateZ(-45deg);
+  }
+  header label input:checked ~ span:nth-of-type(3) {
+    transform-origin: bottom;
+    width: 50%;
+    transform: translate(30px, -11px) rotateZ(45deg);
+  }
+  header label input:checked ~ nav, header label input:checked ~ .bcBurger {
+    visibility: visible;
+  }
+  header label input:checked ~ nav a {
+    opacity: 100%;
+    left: 0px;
+  }
+  header label input:checked ~ nav li {
+    opacity: 100%;
+  }
+  header label input:checked ~ nav li:nth-of-type(1) {
+    left: 0px;
+  }
+  header label input:checked ~ nav li:nth-of-type(2) {
+    left: 0px;
+  }
+  header label input:checked ~ nav li:nth-of-type(3) {
+    left: 0px;
+  }
+}
 header nav {
   height: 100%;
   width: 80%;
@@ -23,10 +135,20 @@ header nav {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 868px) {
+  header nav {
+    flex-direction: column;
+  }
+}
 header nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
+}
+@media screen and (max-width: 868px) {
+  header nav ul {
+    flex-direction: column;
+  }
 }
 header nav li {
   padding-right: 32px;
