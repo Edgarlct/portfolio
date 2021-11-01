@@ -1,8 +1,9 @@
 .projectGrid{
   @include grid(80px);
-
-  div:last-child{
-    grid-row: 4;
+  @include m{
+    div:last-child{
+      grid-row: 4;
+    }
   }
 }
 
