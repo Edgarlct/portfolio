@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+@mixin bg-center($url) {
+  background: url($url);
+  background-size: cover;
+  background-position: center;
+}
+
 @mixin grid($rowGapValue: 32px){
   max-width: 1200px;
   min-height: 80vh;

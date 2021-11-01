@@ -326,7 +326,7 @@ h3 {
 .profil .pictureProfil {
   height: 448px;
   width: 100%;
-  background-image: url("../assets/image/pro.jpg");
+  background: url("../assets/image/pro.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 0 30px 0 30px;
