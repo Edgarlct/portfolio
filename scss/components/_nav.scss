@@ -16,7 +16,7 @@ header{
     >span, >input, .bcBurger{
       display: none;
     }
-    .test{
+    .burgerMenuContainer{
       @include m {
         > span, > input, .bcBurger {
           display: block;

@@ -23,7 +23,7 @@ header label > span, header label > input, header label .bcBurger {
   display: none;
 }
 @media screen and (max-width: 868px) {
-  header label .test {
+  header label .burgerMenuContainer {
     display: block;
     height: 100%;
     width: 70px;
@@ -33,57 +33,57 @@ header label > span, header label > input, header label .bcBurger {
     left: 40px;
     top: 20px;
   }
-  header label .test > span, header label .test > input, header label .test .bcBurger {
+  header label .burgerMenuContainer > span, header label .burgerMenuContainer > input, header label .burgerMenuContainer .bcBurger {
     display: block;
   }
-  header label .test nav {
+  header label .burgerMenuContainer nav {
     visibility: hidden;
     height: 50vh;
     width: auto;
     position: relative;
     left: 48px;
   }
-  header label .test nav ul {
+  header label .burgerMenuContainer nav ul {
     height: 80%;
     justify-content: space-evenly;
   }
-  header label .test nav ul li {
+  header label .burgerMenuContainer nav ul li {
     opacity: 0%;
     transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     position: relative;
   }
-  header label .test nav ul li:nth-of-type(1) {
+  header label .burgerMenuContainer nav ul li:nth-of-type(1) {
     left: -100px;
   }
-  header label .test nav ul li:nth-of-type(2) {
+  header label .burgerMenuContainer nav ul li:nth-of-type(2) {
     left: -200px;
   }
-  header label .test nav ul li:nth-of-type(3) {
+  header label .burgerMenuContainer nav ul li:nth-of-type(3) {
     left: -300px;
   }
-  header label .test nav a {
+  header label .burgerMenuContainer nav a {
     transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     opacity: 0%;
     position: relative;
     left: -400px;
   }
-  header label .test > span {
+  header label .burgerMenuContainer > span {
     height: 7px;
     margin: 14px 0;
     background-color: #FFFFFF;
     border-radius: 8px;
     transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
-  header label .test > span:nth-of-type(1) {
+  header label .burgerMenuContainer > span:nth-of-type(1) {
     width: 50%;
   }
-  header label .test > span:nth-of-type(2) {
+  header label .burgerMenuContainer > span:nth-of-type(2) {
     width: 100%;
   }
-  header label .test > span:nth-of-type(3) {
+  header label .burgerMenuContainer > span:nth-of-type(3) {
     width: 75%;
   }
-  header label .test .bcBurger {
+  header label .burgerMenuContainer .bcBurger {
     position: fixed;
     top: -14px;
     left: 0;
@@ -92,39 +92,39 @@ header label > span, header label > input, header label .bcBurger {
     background-color: rgba(22, 76, 146, 0.6);
     visibility: hidden;
   }
-  header label .test input {
+  header label .burgerMenuContainer input {
     display: none;
   }
-  header label .test input:checked ~ span:nth-of-type(1) {
+  header label .burgerMenuContainer input:checked ~ span:nth-of-type(1) {
     transform-origin: bottom;
     transform: rotateZ(45deg) translate(8px, 0px);
   }
-  header label .test input:checked ~ span:nth-of-type(2) {
+  header label .burgerMenuContainer input:checked ~ span:nth-of-type(2) {
     transform-origin: top;
     transform: rotateZ(-45deg);
   }
-  header label .test input:checked ~ span:nth-of-type(3) {
+  header label .burgerMenuContainer input:checked ~ span:nth-of-type(3) {
     transform-origin: bottom;
     width: 50%;
     transform: translate(30px, -11px) rotateZ(45deg);
   }
-  header label .test input:checked ~ nav, header label .test input:checked ~ .bcBurger {
+  header label .burgerMenuContainer input:checked ~ nav, header label .burgerMenuContainer input:checked ~ .bcBurger {
     visibility: visible;
   }
-  header label .test input:checked ~ nav a {
+  header label .burgerMenuContainer input:checked ~ nav a {
     opacity: 100%;
     left: 0px;
   }
-  header label .test input:checked ~ nav li {
+  header label .burgerMenuContainer input:checked ~ nav li {
     opacity: 100%;
   }
-  header label .test input:checked ~ nav li:nth-of-type(1) {
+  header label .burgerMenuContainer input:checked ~ nav li:nth-of-type(1) {
     left: 0px;
   }
-  header label .test input:checked ~ nav li:nth-of-type(2) {
+  header label .burgerMenuContainer input:checked ~ nav li:nth-of-type(2) {
     left: 0px;
   }
-  header label .test input:checked ~ nav li:nth-of-type(3) {
+  header label .burgerMenuContainer input:checked ~ nav li:nth-of-type(3) {
     left: 0px;
   }
 }
