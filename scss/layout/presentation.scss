@@ -39,6 +39,9 @@
 .subTitle{
   color: $blue_300;
   font-size: 48px;
+  @include xs{
+    font-size: 40px;
+  }
 }
 
 .profil{
