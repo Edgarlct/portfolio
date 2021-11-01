@@ -319,7 +319,7 @@ h3 {
 }
 
 .profil {
-  grid-column: -2/-6;
+  grid-column: -6/-1;
   display: flex;
   align-items: center;
 }
