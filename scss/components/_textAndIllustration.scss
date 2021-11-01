@@ -1,5 +1,8 @@
 .bcIllustration{
   grid-column: 1/6;
+  @include m{
+    grid-column: 1/-1;
+  }
   height: 448px;
   background-color: $blue_400;
   border-radius: 0 30px 0 30px;
@@ -15,10 +18,14 @@
 
 .part1{
   grid-column: 7/-1;
+  @include m{
+    grid-column: 1/-1;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+  width: 100%;
 
   .bcContrast{
     background-color: $blue_700;
@@ -45,9 +52,16 @@
   .link{
     display: flex;
     flex-direction: row;
-
+    @include xs{
+      flex-direction: column;
+      align-items: center;
+    }
     a{
       margin-right: 24px;
+      @include xs{
+        margin-right: 0px;
+        margin-bottom: 16px;
+      }
     }
   }
 }

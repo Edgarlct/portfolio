@@ -149,6 +149,11 @@ footer .copyright {
   margin: auto 0;
   position: relative;
 }
+@media screen and (max-width: 868px) {
+  .bcIllustration {
+    grid-column: 1/-1;
+  }
+}
 .bcIllustration img {
   width: 80%;
 }
@@ -159,6 +164,12 @@ footer .copyright {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  width: 100%;
+}
+@media screen and (max-width: 868px) {
+  .part1 {
+    grid-column: 1/-1;
+  }
 }
 .part1 .bcContrast {
   background-color: #164c92;
@@ -182,8 +193,20 @@ footer .copyright {
   display: flex;
   flex-direction: row;
 }
+@media screen and (max-width: 380px) {
+  .part1 .link {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .part1 .link a {
   margin-right: 24px;
+}
+@media screen and (max-width: 380px) {
+  .part1 .link a {
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
 }
 
 .title {
@@ -322,11 +345,20 @@ h3 {
   .home {
     max-width: 530px;
     grid-template-columns: repeat(4, 1fr);
+    row-gap: 32px;
   }
 }
 @media screen and (max-width: 530px) {
   .home {
-    margin: 0 30px;
+    margin: 0 48px;
+  }
+}
+@media screen and (max-width: 868px) {
+  .home {
+    grid-template-rows: 500px;
+  }
+  .home .bcIllustration {
+    display: none;
   }
 }
 
@@ -336,6 +368,11 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (max-width: 868px) {
+  .homeLeftPart {
+    grid-column: 1/-1;
+  }
 }
 .homeLeftPart p {
   color: #87b3ed;
@@ -361,6 +398,11 @@ h3 {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 868px) {
+  .profil {
+    grid-column: 1/-1;
+  }
+}
 .profil .pictureProfil {
   height: 448px;
   width: 100%;
@@ -369,6 +411,11 @@ h3 {
   background-position: center;
   border-radius: 0 30px 0 30px;
   position: relative;
+}
+@media screen and (max-width: 868px) {
+  .profil .pictureProfil {
+    height: 300px;
+  }
 }
 
 .skill {
@@ -395,11 +442,12 @@ h3 {
   .skill {
     max-width: 530px;
     grid-template-columns: repeat(4, 1fr);
+    row-gap: 32px;
   }
 }
 @media screen and (max-width: 530px) {
   .skill {
-    margin: 0 30px;
+    margin: 0 48px;
   }
 }
 
@@ -455,11 +503,12 @@ h3 {
   .projet {
     max-width: 530px;
     grid-template-columns: repeat(4, 1fr);
+    row-gap: 32px;
   }
 }
 @media screen and (max-width: 530px) {
   .projet {
-    margin: 0 30px;
+    margin: 0 48px;
   }
 }
 
@@ -490,11 +539,12 @@ a {
   .contact {
     max-width: 530px;
     grid-template-columns: repeat(4, 1fr);
+    row-gap: 32px;
   }
 }
 @media screen and (max-width: 530px) {
   .contact {
-    margin: 0 30px;
+    margin: 0 48px;
   }
 }
 
@@ -554,11 +604,12 @@ a {
   .projectGrid {
     max-width: 530px;
     grid-template-columns: repeat(4, 1fr);
+    row-gap: 32px;
   }
 }
 @media screen and (max-width: 530px) {
   .projectGrid {
-    margin: 0 30px;
+    margin: 0 48px;
   }
 }
 

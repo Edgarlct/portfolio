@@ -1,11 +1,21 @@
 .home{
   @include grid(128px);
   grid-template-rows: 600px 448px;
+  @include m {
+    grid-template-rows: 500px;
+
+    .bcIllustration {
+      display: none;
+    }
+  }
 }
 
 .homeLeftPart{
   width: 100%;
   grid-column: 1/7;
+  @include m{
+    grid-column: 1/-1;
+  }
 
   display: flex;
   flex-direction: column;
@@ -33,11 +43,17 @@
 
 .profil{
   grid-column: -6/-1;
+  @include m{
+    grid-column: 1/-1;
+  }
   display: flex;
   align-items: center;
 
   .pictureProfil {
     height: 448px;
+    @include m{
+      height: 300px;
+    }
     width: 100%;
     @include bg-center("../assets/image/pro.jpg");
     border-radius: 0 30px 0 30px;
