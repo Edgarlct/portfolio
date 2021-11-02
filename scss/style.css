@@ -514,6 +514,7 @@ h3 {
 @media screen and (max-width: 530px) {
   .home {
     margin: 0 48px;
+    margin-top: 56px;
   }
 }
 @media screen and (max-width: 868px) {
@@ -618,6 +619,7 @@ h3 {
 @media screen and (max-width: 530px) {
   .skill {
     margin: 0 48px;
+    margin-top: 56px;
   }
 }
 @media screen and (max-width: 868px) {
@@ -703,6 +705,7 @@ h3 {
 @media screen and (max-width: 530px) {
   .projet {
     margin: 0 48px;
+    margin-top: 56px;
   }
 }
 @media screen and (max-width: 868px) {
@@ -752,6 +755,7 @@ a {
 @media screen and (max-width: 530px) {
   .contact {
     margin: 0 48px;
+    margin-top: 56px;
   }
 }
 
@@ -836,6 +840,7 @@ a {
 @media screen and (max-width: 530px) {
   .projectGrid {
     margin: 0 48px;
+    margin-top: 56px;
   }
 }
 @media screen and (max-width: 868px) {
