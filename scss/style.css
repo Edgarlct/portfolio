@@ -13,12 +13,10 @@ header {
   border-radius: 0 0 20px 20px;
   position: fixed;
   filter: drop-shadow(0px 12px 24px rgba(22, 76, 146, 0.23));
-  margin-top: 80px;
 }
 @media screen and (max-width: 868px) {
   header {
     background-color: unset;
-    margin-top: 56px;
   }
 }
 header label .burgerMenuContainer > span, header label .burgerMenuContainer > input, header label .burgerMenuContainer .bcBurger {
@@ -489,6 +487,7 @@ h3 {
   min-height: 80vh;
   display: grid;
   margin: 0 auto;
+  margin-top: 80px;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
   row-gap: 128px;
@@ -509,6 +508,7 @@ h3 {
     max-width: 530px;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 32px;
+    margin-top: 56px;
   }
 }
 @media screen and (max-width: 530px) {
@@ -591,6 +591,7 @@ h3 {
   min-height: 80vh;
   display: grid;
   margin: 0 auto;
+  margin-top: 80px;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
   row-gap: 32px;
@@ -611,6 +612,7 @@ h3 {
     max-width: 530px;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 32px;
+    margin-top: 56px;
   }
 }
 @media screen and (max-width: 530px) {
@@ -674,6 +676,7 @@ h3 {
   min-height: 80vh;
   display: grid;
   margin: 0 auto;
+  margin-top: 80px;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
   row-gap: 32px;
@@ -694,6 +697,7 @@ h3 {
     max-width: 530px;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 32px;
+    margin-top: 56px;
   }
 }
 @media screen and (max-width: 530px) {
@@ -722,6 +726,7 @@ a {
   min-height: 80vh;
   display: grid;
   margin: 0 auto;
+  margin-top: 80px;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
   row-gap: 32px;
@@ -741,6 +746,7 @@ a {
     max-width: 530px;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 32px;
+    margin-top: 56px;
   }
 }
 @media screen and (max-width: 530px) {
@@ -804,6 +810,7 @@ a {
   min-height: 80vh;
   display: grid;
   margin: 0 auto;
+  margin-top: 80px;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
   row-gap: 80px;
@@ -823,6 +830,7 @@ a {
     max-width: 530px;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 32px;
+    margin-top: 56px;
   }
 }
 @media screen and (max-width: 530px) {

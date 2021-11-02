@@ -15,6 +15,7 @@
   min-height: 80vh;
   display: grid;
   margin: 0 auto;
+  margin-top: 80px;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
   row-gap: $rowGapValue;
@@ -31,6 +32,7 @@
     max-width: 530px;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 32px;
+    margin-top: 56px;
   }
 
   @include s{
