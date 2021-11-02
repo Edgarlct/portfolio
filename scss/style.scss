@@ -18,6 +18,10 @@
         "layout/contact",
         "layout/projectInDetail";
 
+html, body{
+  overflow-x: hidden;
+}
+
 body{
   width: 100vw;
   overflow: hidden auto;

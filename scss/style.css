@@ -11,12 +11,14 @@ header {
   top: 0;
   background-color: #5b97e6;
   border-radius: 0 0 20px 20px;
-  position: sticky;
+  position: fixed;
   filter: drop-shadow(0px 12px 24px rgba(22, 76, 146, 0.23));
+  margin-top: 80px;
 }
 @media screen and (max-width: 868px) {
   header {
     background-color: unset;
+    margin-top: 56px;
   }
 }
 header label .burgerMenuContainer > span, header label .burgerMenuContainer > input, header label .burgerMenuContainer .bcBurger {
@@ -1036,6 +1038,10 @@ a {
 
 .l10 {
   left: 10%;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 body {
